@@ -62,8 +62,8 @@ body {
 
 .container-botao:hover {
     transition: transform 0.3s ease, background-color 0.3s ease;
-    background-color: rgb(197, 35, 35);
-    
+    background-color: rgb(197, 3 4 35);
+
 }
 
 .container-botao-secundario {
@@ -164,4 +164,53 @@ body {
     color: var(--botao_azul);
     transition: 0.3s;
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+    }
+
+    .principal {
+        background-image: url(./imagens/background.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100vh;
+    }
+
+    .secundario-imagem {
+        width: 50vw;
+    }
+
+    .container-caixa {
+        margin: 2em 2em;
+    }
+
+    .secundario {
+        margin: 0 2em;
+        text-align: center;
+    }
+
+    .descricao-texto {
+        font-size: 0.625rem;
+    }
+
+    .dispositivos-lista {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        margin-top: 1em;
+    }
+    .rodape-lista {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        margin-top: 1em;
+    }
+
+    .lista-link {
+        margin-top: 0.8em;
+    }
 }
